@@ -17,6 +17,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+node.default['et_gradle']['release_url_prefix'] = 'https://services.gradle.org/distributions/gradle-'
+
 include_recipe 'et_gradle'
 
 jar_path = "#{node['exhibitor']['install_dir']}/#{node['exhibitor']['version']}.jar"
