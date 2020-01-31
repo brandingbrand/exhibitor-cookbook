@@ -56,3 +56,6 @@ default['exhibitor']['config'] = {
   'auto-manage-instances'                    => '1',
   'servers-spec'                             => "1:#{node['ipaddress']}",
 }
+
+# Override gradle dependency
+default['et_gradle']['release_url_prefix'] = 'https://services.gradle.org/distributions/gradle-'
